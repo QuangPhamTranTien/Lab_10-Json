@@ -1,47 +1,50 @@
 package Lab10;
 public class Joke {
-    private String id;
-    private String joke;
-    private int status;
+    private String type;
+    private String setup;
+    private String punchline;
+    private int id;
 
-    public Joke(String id, String joke, int status) {
-        this.id = id;
-        this.joke = joke;
-        this.status = status;
+    // Getters and setters
+    public String getType() {
+        return type;
     }
 
-    // Getters and Setters (optional, if needed)
-    public String getId() {
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getSetup() {
+        return setup;
+    }
+
+    public void setSetup(String setup) {
+        this.setup = setup;
+    }
+
+    public String getPunchline() {
+        return punchline;
+    }
+
+    public void setPunchline(String punchline) {
+        this.punchline = punchline;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
-    }
-
-    public String getJoke() {
-        return joke;
-    }
-
-    public void setJoke(String joke) {
-        this.joke = joke;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
     }
 
     @Override
     public String toString() {
         return "Joke{" +
-                "id='" + id + '\'' +
-                ", joke='" + joke + '\'' +
-                ", status=" + status +
+                "type='" + type + '\'' +
+                ", setup='" + setup + '\'' +
+                ", punchline='" + punchline + '\'' +
+                ", id=" + id +
                 '}';
     }
 }
-

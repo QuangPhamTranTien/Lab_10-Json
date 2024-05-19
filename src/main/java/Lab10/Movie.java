@@ -14,7 +14,6 @@ public class Movie {
         this.cast = cast;
     }
 
-    // Getters and Setters (optional, if needed)
     public String getTitle() {
         return title;
     }

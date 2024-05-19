@@ -12,7 +12,6 @@ public class Student {
         this.courses = courses;
     }
 
-    // Getters and Setters (optional, if needed)
     public String getName() {
         return name;
     }
